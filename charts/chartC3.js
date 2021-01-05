@@ -1,8 +1,11 @@
-var chartG4 = {  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+var chartC3 = {  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
  
  "title": {
-    "text": "NEW CASES - ROLLING RATE",
-    "anchor": "middle",
+    "text": "Cases: English regions - since September",
+    "subtitle":"New cases by publish date. Rolling weekly rate per 100k population.",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
     "color": "black"
   },
 
@@ -14,7 +17,7 @@ var chartG4 = {  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   },
   "height": 300,
   "width": 340,
-  "config": {"background": "#FcFdFd"},
+  "xxconfig": {"background": "#FcFdFd"},
   "mark": {"type": "bar", "point": false},
   "selection": {
     "region": {"type": "multi", "fields": ["areaName"], "bind": "legend"}
@@ -73,4 +76,4 @@ var chartG4 = {  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 }
 ;
 
-vegaEmbed('#chartG4', chartG4, {"actions":false});
+vegaEmbed('#chartC3', chartC3, {"actions":false});

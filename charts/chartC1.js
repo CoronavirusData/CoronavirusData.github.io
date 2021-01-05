@@ -1,7 +1,7 @@
-var chartG2 = {
+var chartC1 = {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": {
-    "text": "Coronavirus: new cases",
+    "text": "Cases: UK nations",
     "subtitle":"New cases by publish date. Source: coronavirus.data.gov.uk",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
@@ -15,7 +15,7 @@ var chartG2 = {
   },
   "height": 300,
   "width": 345,
-  "config": {"background": "#FcFdFd"},
+  "xxconfig": {"background": "#FcFdFd"},
   "mark": {"type": "line", "point": false},
   "selection": {
     "region": {"type": "multi", "fields": ["areaName"], "bind": "legend"}
@@ -64,4 +64,4 @@ var chartG2 = {
     ]
   }
 }
-vegaEmbed('#chartG2', chartG2, {"actions": false});
+vegaEmbed('#chartC1', chartC1, {"actions": false});

@@ -20,6 +20,10 @@ p {
 }
 
 
+body {
+  background-color: #f8fcfd;
+}
+
 /* ------------------------------------------------------------------------------
 	Lists
 -------------------------------------------------------------------------------*/
@@ -32,16 +36,16 @@ p {
   grid-row-gap: 20px;
 }
 .grid_items > div {
-  background-color: #efefef;
+  background-color: #ffffff;
   padding: 5px;
   border-radius: 10px;
   width: fit-content;
 }
 .grid_items > div:nth-child(3n + 2) {
-  background-color: #efefef;
+  background-color: #ffffff;
 }
 .grid_items > div:nth-child(3n) {
-  background-color: #efefef;
+  background-color: #ffffff;
 }
 
 

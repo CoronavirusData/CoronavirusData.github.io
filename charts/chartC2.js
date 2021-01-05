@@ -1,5 +1,15 @@
-var chartMobile1 = {
+var chartC2 = {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+
+"title": {
+    "text": "Cases: English regions - past month",
+    "subtitle":"New cases by publish date. Source: coronavirus.data.gov.uk",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
   "description": "Coronavirus cases",
   "data": {
     "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=region&metric=newCasesByPublishDate&format=csv",
@@ -8,7 +18,7 @@ var chartMobile1 = {
 
   "height": 300,
   
-  "width": 300,
+  "width": 330,
   
   "mark": {"type": "bar", "width":10},
   
@@ -41,7 +51,7 @@ var chartMobile1 = {
       "filter": {
         "field": "date",
         "range": [
-          {"year": 2020, "month": "dec", "date": 1},
+          {"year": 2020, "month": "dec", "date": 5},
           {"year": 2050, "month": "dec", "date": 30}
         ]
       }
@@ -67,4 +77,4 @@ var chartMobile1 = {
 }
 ;
 
-vegaEmbed('#visMobile1', chartMobile1);
+vegaEmbed('#chartC2', chartC2, {"actions":false});

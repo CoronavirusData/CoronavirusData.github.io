@@ -1,5 +1,14 @@
-var chartG3 = {
+var chartR1 = {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+
+  "title": {
+    "text": "Risks: case rate, versus elderly population",
+    "subtitle":"Case rate, per capita. Share of population 75+ years old. Source: my calcs",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
 
   "description": "Covid-19 data, from ECDC",
 
@@ -51,16 +60,12 @@ var chartG3 = {
       }
     ]
   },
-  "xxtitle": {
-    "text": "COVID-19 - CASES AND DEATHS PER CAPITA",
-    "anchor": "start",
-    "color": "black"
-  },
-  "config": {"background": "#FcFdFd"},
+  
+  "xxconfig": {"background": "#FcFdFd"},
   "height": 300,
   "width": 340,
   "mark": {"type": "circle", "opacity": 0.4, "color":"blue"}
 }
 ;
 
-vegaEmbed('#chartG3', chartG3, {"actions":false});
+vegaEmbed('#chartR1', chartR1, {"actions":false});
