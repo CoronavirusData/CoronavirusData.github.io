@@ -65,7 +65,6 @@ var chartC4 = {
       }
     ]
   }
-}
-;
+};
 
 vegaEmbed('#chartC4', chartC4, {"actions":false});
