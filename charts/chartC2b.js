@@ -29,6 +29,7 @@ var chartC2b = {
       "bind": {
         "input": "select",
         "options": [
+          null,
           "London",
           "East Midlands",
           "East of England",
