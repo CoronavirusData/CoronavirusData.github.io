@@ -15,8 +15,8 @@ var chartC4 = {
     "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=region&metric=uniqueCasePositivityBySpecimenDateRollingSum&format=csv",
     "format": {"type": "csv"}
   },
-  "height": 400,
-  "width": "container",
+  "height": 300,
+  "width": 345,
   "config": {"background": "#FfFfFf"},
   "mark": {"type": "line", "point": false},
   "selection": {
@@ -65,6 +65,7 @@ var chartC4 = {
       }
     ]
   }
-};
+}
+;
 
 vegaEmbed('#chartC4', chartC4, {"actions":false});

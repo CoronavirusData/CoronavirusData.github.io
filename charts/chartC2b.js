@@ -39,7 +39,7 @@ var chartC2b = {
           "West Midlands",
           "Yorkshire and The Humber"
         ],
-        "name": "Pick a region"
+        "name": "Pick a region:  "
       }
     }
   },

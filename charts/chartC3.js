@@ -60,17 +60,7 @@ var chartC3 = {  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "tooltip": [
       {"field": "date", "type": "temporal", "title": "Date"},
       {"field": "areaName", "type": "nominal", "title": "Region"},
-      {
-        "field": "rolling_mean",
-        "type": "nominal",
-        "title": "Cases 14-day avg",
-        "format": ".0f"
-      },
-      {
-        "field": "newCasesBySpecimenDate",
-        "type": "nominal",
-        "title": "New cases"
-      }
+      {"field": "newCasesByPublishDateRollingRate", "type": "nominal", "title": "New cases", "format": ".0f"}
     ]
   }
 }

@@ -1,11 +1,11 @@
-var chartD1 = {
+var chartH1 = {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 
-  "description": "Coronavirus deaths",
+  "description": "Hospital admissions",
 
 "title": {
-    "text": "Deaths: UK nations",
-    "subtitle":"Deaths within 28 days of Covid-19 diagnosis.",
+    "text": "Hospitals: new admissions",
+    "subtitle":"Daily new hospital admissions",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -13,7 +13,7 @@ var chartD1 = {
   },
 
   "data": {
-    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=nation&metric=newCasesByPublishDate&metric=newDeaths28DaysByPublishDate&format=csv",
+    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=nation&metric=newAdmissions&format=csv",
     "format": {"type": "csv"}
   },
 
@@ -21,7 +21,7 @@ var chartD1 = {
   
   "width": 150,
   
-  "mark": {"type": "bar", "color":"#4f009f"},
+  "mark": {"type": "line", "color":"red"},
   
   "transform": [
      {
@@ -40,7 +40,7 @@ var chartD1 = {
     "x": {"field": "date", "type": "temporal", "title": "Date"},
     
     "y": {
-      "field": "newDeaths28DaysByPublishDate",
+      "field": "newAdmissions",
       "type": "quantitative",
       "title": null
     
@@ -54,13 +54,14 @@ var chartD1 = {
     },
     "tooltip": [
       {"field": "date", "type": "temporal", "title": "Date"},
-      {"field": "newDeaths28DaysByPublishDate", "type": "quantitative", "title": "Deaths", "format": ",.0f"}
+      {"field": "newAdmissions","type": "quantitative","title": "New Admissions","format": ",.0f"}
     ]
 
     
   },
   "resolve": {"scale": {"y": "independent"}}
 }
+
 ;
 
-vegaEmbed('#chartD1', chartD1, {"actions":false});
+vegaEmbed('#chartH1', chartH1, {"actions":false});

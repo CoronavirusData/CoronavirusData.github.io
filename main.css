@@ -13,7 +13,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
 
 p {
-	font-size: 18px;
+	font-size: 16px;
 	margin: 5px 5px;
 	line-height: 22.4px;
 	color: #323232;
@@ -139,15 +139,15 @@ h5 {
 
 /* Links as buttons */
 a {
-	font-family: "Heebo";
-	font-size: 14px;
-	font-weight: 700;
-    xxbackground-color: white ;
+	xxfont-family: "Heebo";
+	font-size: 16px;
+	font-weight: 600;
+    xxbackground-color: lightblue ;
     xxcolor: white;
-    xxpadding: 0..25em 0.75em;
+    padding: 0.05em 0.10em;
     text-decoration: none;
     text-transform: none;
-    xxborder-radius: 8px;
+    border-radius: 8px;
 }
 
 /* unvisited link */
@@ -177,7 +177,7 @@ a:active {
 body {
 	font-family: "Crimson Text";
 	font-weight: 400;
-	color: #fff;
+	color: #323232;
 	max-width: 1300px; 
 	margin: 0 auto 0 auto !important;
 	padding: 0 5 0 5; 
