@@ -1,9 +1,9 @@
-var chartC2 = {
+var chartC2b = {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 
 "title": {
-    "text": "Cases: English regions - past month",
-    "subtitle":"New cases by publish date.",
+    "text": "Cases by specimen date: English regions - past month",
+    "subtitle":"Daily new cases by specimen date.",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -12,7 +12,7 @@ var chartC2 = {
 
   "description": "Coronavirus cases",
   "data": {
-    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=region&metric=newCasesByPublishDate&format=csv",
+    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=region&metric=newCasesBySpecimenDate&format=csv",
     "format": {"type": "csv"}
   },
 
@@ -60,7 +60,7 @@ var chartC2 = {
   "encoding": {
     "x": {"field": "date", "type": "temporal", "title": "Date"},
     "y": {
-      "field": "newCasesByPublishDate",
+      "field": "newCasesBySpecimenDate",
       "type": "quantitative",
       "title": "New cases"
     },
@@ -70,10 +70,10 @@ var chartC2 = {
       "field": "areaName",
       "type": "nominal",
       "legend": null,
-      "scale": {"scheme": "inferno"}
+      "scale": {"scheme": "viridis"}
     }
   }
 }
 ;
 
-vegaEmbed('#chartC2', chartC2, {"actions":false});
+vegaEmbed('#chartC2b', chartC2b, {"actions":false});
