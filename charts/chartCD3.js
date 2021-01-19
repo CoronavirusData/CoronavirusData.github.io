@@ -9,7 +9,7 @@ var chartCD1 = {
   },
 
   "title": {
-    "text": "Cases vs Deaths: UK (7 day average)",
+    "text": "Cases vs Deaths: UK (Daily data)",
     "subtitle":"New cases and new deaths (28d) by publish date.",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
@@ -26,26 +26,11 @@ var chartCD1 = {
 
   "mark": {"type": "circle", "size":75},
   
-    "transform": [
-    {
-      "window": [
-        {"field": "newCasesByPublishDate",
-         "op": "mean", 
-         "as": "rolling_meanx"
-         },
-         {"field": "newDeaths28DaysByPublishDate",
-         "op": "mean", 
-         "as": "rolling_meany"
-         }
-      ],
-      "frame": [-7, 1]
-    }],
-
   "encoding": {
-    "x": {"field": "rolling_meanx", "type": "quantitative", "title": "Cases"},
+    "x": {"field": "newCasesByPublishDate", "type": "quantitative", "title": "Cases"},
   
     "y": {
-      "field": "rolling_meany",
+      "field": "newDeaths28DaysByPublishDate",
       "type": "quantitative",
       "title": "Deaths"
     },
@@ -55,8 +40,7 @@ var chartCD1 = {
       "field":"date",
       "type": "ordinal",
       "title":null,
-      "scale": {"scheme": "turbo"},
-      "xxlegend":{"orient":"top"}
+      "scale": {"scheme": "turbo"}
     },
 
     "tooltip": [
@@ -74,8 +58,7 @@ var chartCD1 = {
         "format": ",.0f"
       }
     ]
-  },
-  "resolve": {"scale": {"y": "independent", "x": "independent"}}
+  }
 }
 ;
 
