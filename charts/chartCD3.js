@@ -1,4 +1,5 @@
-var chartCD1 = {
+var chartCD3 = {
+  
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 
   "description": "Coronavirus cases",
@@ -62,4 +63,4 @@ var chartCD1 = {
 }
 ;
 
-vegaEmbed('#chartCD1', chartCD1, {"actions":false});
+vegaEmbed('#chartCD3', chartCD3, {"actions":false});
