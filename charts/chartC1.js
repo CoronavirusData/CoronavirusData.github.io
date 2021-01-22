@@ -63,5 +63,5 @@ var chartC1 = {
       }
     ]
   }
-}
+};
 vegaEmbed('#chartC1', chartC1, {"actions": false});
